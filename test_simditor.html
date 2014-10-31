@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="styles/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="styles/simditor.css" />
+<script type="text/javascript" src="scripts/js/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/js/module.js"></script>
+<script type="text/javascript" src="scripts/js/uploader.js"></script>
+<script type="text/javascript" src="scripts/js/simditor.js"></script>
+<script>
+$(function(){  
+	var editor = new Simditor({
+	textarea: $('#editor'),
+	// textarea: null
+	  placeholder: '',
+	  defaultImage: 'images/image.png',
+	  params: {},
+	  upload: false,
+	  tabIndent: true,
+	  toolbar: [
+	            'title',           
+	            'bold'  ,         
+	            'italic' ,        
+	            'underline' ,      
+	            'strikethrough'  , 
+	            'color' ,         
+	            'ol'  ,            
+	            'ul' ,             
+	            'blockquote'    , 
+	            'code'   ,         
+	            'table' ,          
+	            'link'  ,          
+	            'image' ,          
+	            'hr'  ,            
+	            'indent'  ,        
+	            'outdent'         
+	          ],
+	  toolbarFloat: true,
+	  toolbarHidden: false,
+	  pasteImage: false
+	
+		});
+});  
+</script>
+</head>
+<body>
+<div style="width:958px;height:403px">
+<textarea id="editor" placeholder="这里输入内容" autofocus></textarea>
+</div> 
+</body>
+</html>
